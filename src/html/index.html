@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,300;1,700&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" href="./app.css">
+<title>Partage de pages web</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1 id="titre">Partagez vos pages web préférées</h1>
+
+		<div class="message" id="message"></div>
+		<div class="form-conteneur" id="conteneur">
+			<button class="bouton" id="ajouterBtn">Ajouter un lien</button>
+			<form id="formulaire" action="#">
+				<input class="champs" type="text" name="nom" required placeholder="Entrez votre pseudo">
+				<input class="champs" type="text" name="titre" required placeholder="Entrez le titre du lien">
+				<input class="champs" type="text" name="url" required placeholder="URL du lien">
+				<input type="submit" value="envoyer" name="envoyer" class="bouton" id="envoyerBtn">
+			</form>
+		</div>
+		<!-- Les nouveaux éléments sont ajoutés dans cette balise -->
+		<div id="contenu"></div>
+	</div>
+ <script src="app.js" type="application/javascript"></script>
+
+</body>
+
+</html>
